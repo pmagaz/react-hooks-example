@@ -12,7 +12,7 @@ You can clone our Git repository:
 
 Execute yarn start or npm run start to start the development server and the example.
 
-### Architecture
+### Examples
 
 * `UseState.jsx` Use example of usestate hook
 * `UseEffect.jsx` Use example of useEffect hook
