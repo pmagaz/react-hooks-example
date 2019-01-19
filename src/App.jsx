@@ -4,9 +4,11 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import UseState from './components/UseState';
 import UseEffect from './components/UseEffect';
+import UseContext from './components/UseContext';
 import UseReducer from './components/UseReducer';
+import UseCallback from './components/UseCallback';
 import UseMemo from './components/UseMemo';
-import UseEffectWithCleanUp from './components/UseEffectWithCleanUp';
+import UseRef from './components/UseRef';
 import UseEffectApiRequest from './components/UseEffectApiRequest';
 
 class App extends Component {
@@ -23,27 +25,35 @@ class App extends Component {
             <Link to="/UseEffect">UseEffect</Link>
           </li>
           <li>
-            <Link to="/UseEffectWithCleanUp">UseEffectWithCleanUp</Link>
+            <Link to="/UseEffectApiRequest">UseEffectApiRequest</Link>
           </li>
           <li>
-            <Link to="/UseEffectApiRequest">UseEffectApiRequest</Link>
+            <Link to="/UseContext">UseContext</Link>
           </li>
           <li>
             <Link to="/UseReducer">UseReducer</Link>
           </li>
           <li>
+            <Link to="/UseCallback">UseCallback</Link>
+          </li>
+          <li>
             <Link to="/UseMemo">UseMemo</Link>
+          </li>
+          <li>
+            <Link to="/UseRef">UseRef</Link>
           </li>
         </ul>
 
         <hr />
 
         <Route exact path="/UseState" component={ UseState } />
-        <Route path="/UseEffect" component={UseEffect} />
-        <Route path="/UseEffectWithCleanUp" component={ UseEffectWithCleanUp } />
+        <Route path="/UseEffect" component={ UseEffect } />
         <Route path="/UseEffectApiRequest" component={ UseEffectApiRequest } />
+        <Route path="/UseContext" component={ UseContext } />
         <Route path="/UseReducer" component={ UseReducer } />
+        <Route path="/UseCallback" component={ UseCallback } />
         <Route path="/UseMemo" component={ UseMemo } />
+        <Route path="/UseRef" component={ UseRef } />
       </div>
     </Router>
      

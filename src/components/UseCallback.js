@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useCallback } from 'react';
 
 const UseMemo = () => {
   const [text, setText] = useState('Hello!');
@@ -13,7 +13,7 @@ const UseMemo = () => {
   }
 
    // Solo se renderiza cuando el valor indicado en [] cambie
-   const MemoizedComponent = useMemo(() => <ChildComponent text={ text } />, [text]);
+   const MemoizedComponent = useCallback(<ChildComponent text={ text } />, [text]);
 
    return (
      <div>
