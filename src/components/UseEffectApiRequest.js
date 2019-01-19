@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const UseEffect = () => {
+const UseEffectApiRequest = () => {
   let [posts, setPosts] = useState([]);
   let [isLoading, setIsLoading] = useState(false);
 
@@ -20,11 +20,12 @@ const UseEffect = () => {
         { loading  }
         { posts.map((post, key) => (
           <div key={ key }>
-            { post.title } </div>
+            { post.title }
+          </div>
         ))}
         </div>
     </fieldset>
   );
 }
 
-export default UseEffect;
+export default UseEffectApiRequest;

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 
 const UseState = () => {
-  
-  const [count, setCount] = useState(0);
+  //se define la variable count y su setter utilizando desestructuracion de Arrays
+  const [count, setCount] = useState(0);// 0 es el valor inicial
+  const [name, setName] = useState('Peter');// Peter es el valor inicial
 
   return (
     <div>
