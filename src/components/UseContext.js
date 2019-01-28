@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 
-const UseContext = () => {
+const UseContextComponent = () => {
   //Create context devuelve { Provider, Consumer }
   const CountContext = React.createContext(15);
   const count = useContext(CountContext);
@@ -14,4 +14,4 @@ const UseContext = () => {
   );
 }
 
-export default UseContext;
+export default UseContextComponent;

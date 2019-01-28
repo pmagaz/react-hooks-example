@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 
-const UseMemo = () => {
+const UseCallbackComponent = () => {
   const [text, setText] = useState('Hello!');
 
   const ChildComponent = ({ text }) => {
@@ -12,7 +12,7 @@ const UseMemo = () => {
      );
   }
 
-   // Solo se renderiza cuando el valor indicado en [] cambie
+   // SOLO se renderiza de nuevo cuando el valor indicado (text) cambie
    const MemoizedComponent = useCallback(<ChildComponent text={ text } />, [text]);
 
    return (
@@ -24,4 +24,4 @@ const UseMemo = () => {
    )
 }
 
-export default UseMemo;
+export default UseCallbackComponent;

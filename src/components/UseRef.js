@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 
-const UseRef = () => {
+const UseRefComponent = () => {
   const [count, setCount] = useState(0);// 0 es el valor inicial
 
   // useRef se puede usar para alojar DOMS refs o cualquier tipo de referencia
@@ -22,4 +22,4 @@ const UseRef = () => {
   );
 }
 
-export default UseRef;
+export default UseRefComponent;

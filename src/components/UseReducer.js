@@ -1,22 +1,21 @@
 import React, { useReducer } from 'react';
 
+// definimos un valor inicial para el store
 const initialState = { count: 0 }; 
+
+//definimos un reducer que recibira el state y el action
 const reducer = (state, action) => {
   switch (action.type) {
-    case 'increment':
-      return {count: state.count + 1};
-    case 'decrement':
-      return {count: state.count - 1};
-    case 'reset':
-      return initialState
-    default:
-      return state;
+    case 'increment': return { count: state.count + 1 };
+    case 'decrement': return { count: state.count - 1 };
+    case 'reset': return initialState
+    default: return state;
   }
 }
 
-const UseReducer = () => {
-  //se define la variable count y su setter utilizando desestructuracion de Arrays
-  const [state, dispatch] = useReducer(reducer, initialState);// initial state
+const UseReducerComponent = () => {
+  //state es el valor del store y dispatch nos permite disparar acciones
+  const [state, dispatch] = useReducer(reducer, initialState);// Valor inicial
 
   return (
     <div>
@@ -28,4 +27,4 @@ const UseReducer = () => {
   );
 }
 
-export default UseReducer;
+export default UseReducerComponent;

@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 
-const UseEffect = () => {
+const UseEffectComponent = () => {
+  //usamos useState para definir mouseEvent y su setter
   let [mouseEvent, setMouseEvent] = useState(0);
   
   useEffect(() => {
-    document.addEventListener("mousemove", setMouseEvent, false); 
+    //useEffect se ejecutara despues del render y en el establecemos el listener
+    document.addEventListener("mousemove", setMouseEvent, false);
   });
 
   return (
@@ -17,4 +19,4 @@ const UseEffect = () => {
   );
 }
 
-export default UseEffect;
+export default UseEffectComponent;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const UseState = () => {
+const UseStateComponent = () => {
   //se define la variable count y su setter utilizando desestructuracion de Arrays
   const [count, setCount] = useState(0);// 0 es el valor inicial
 
@@ -14,4 +14,4 @@ const UseState = () => {
   );
 }
 
-export default UseState;
+export default UseStateComponent;

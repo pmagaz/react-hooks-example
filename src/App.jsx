@@ -2,14 +2,14 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-import UseState from './components/UseState';
-import UseEffect from './components/UseEffect';
-import UseContext from './components/UseContext';
-import UseReducer from './components/UseReducer';
-import UseCallback from './components/UseCallback';
-import UseMemo from './components/UseMemo';
-import UseRef from './components/UseRef';
-import UseEffectApiRequest from './components/UseEffectApiRequest';
+import UseStateComponent from './components/UseState';
+import UseEffectComponent from './components/UseEffect';
+import UseContextComponent from './components/UseContext';
+import UseReducerComponent from './components/UseReducer';
+import UseCallbackComponent from './components/UseCallback';
+import UseMemoComponent from './components/UseMemo';
+import UseRefComponent from './components/UseRef';
+import UseEffectApiRequestComponent from './components/UseEffectApiRequest';
 
 class App extends Component {
   render() {
@@ -46,14 +46,14 @@ class App extends Component {
 
         <hr />
 
-        <Route exact path="/UseState" component={ UseState } />
-        <Route path="/UseEffect" component={ UseEffect } />
-        <Route path="/UseEffectApiRequest" component={ UseEffectApiRequest } />
-        <Route path="/UseContext" component={ UseContext } />
-        <Route path="/UseReducer" component={ UseReducer } />
-        <Route path="/UseCallback" component={ UseCallback } />
-        <Route path="/UseMemo" component={ UseMemo } />
-        <Route path="/UseRef" component={ UseRef } />
+        <Route exact path="/UseState" component={ UseStateComponent } />
+        <Route path="/UseEffect" component={ UseEffectComponent } />
+        <Route path="/UseEffectApiRequest" component={ UseEffectApiRequestComponent } />
+        <Route path="/UseContext" component={ UseContextComponent } />
+        <Route path="/UseReducer" component={ UseReducerComponent } />
+        <Route path="/UseCallback" component={ UseCallbackComponent } />
+        <Route path="/UseMemo" component={ UseMemoComponent } />
+        <Route path="/UseRef" component={ UseRefComponent } />
       </div>
     </Router>
      

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const UseEffectApiRequest = () => {
+const UseEffectApiRequestComponent = () => {
   let [posts, setPosts] = useState([]);
   let [isLoading, setIsLoading] = useState(false);
 
@@ -28,4 +28,4 @@ const UseEffectApiRequest = () => {
   );
 }
 
-export default UseEffectApiRequest;
+export default UseEffectApiRequestComponent;

@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 
-const UseMemo = () => {
+const UseMemoComponent = () => {
   const [text, setText] = useState('Hello!');
 
   const ChildComponent = ({ text }) => {
@@ -24,4 +24,4 @@ const UseMemo = () => {
    )
 }
 
-export default UseMemo;
+export default UseMemoComponent;
